@@ -1,0 +1,25 @@
+<div class="conversion">
+  <div class="conversion__top">
+    <h5>{{amount}} {{convertFrom}} is equavalent to</h5>
+    <h2>{{result}} {{convertTo}}</h2>
+  </div>
+  <div class="conversion__items">
+    <div class="conversion__item">
+      <input min="1" (change)="calculateCurrency()" type="number" [(ngModel)]="amount" placeholder="Enter sum">
+      <select [(ngModel)]="convertFrom" >
+
+        <option *ngFor="let currency of selectCurrencies"
+        [value]="currency"
+
+         >{{currency}}</option>
+
+      </select>
+    </div>
+    <div class="conversion__item">
+      <input disabled type="number" [value]="result">
+      <select (change)="calculateCurrency()" [(ngModel)]="convertTo">
+        <option *ngFor="let currency of selectCurrencies" [value]="currency" >{{currency}}</option>
+      </select>
+    </div>
+  </div>
+</div>

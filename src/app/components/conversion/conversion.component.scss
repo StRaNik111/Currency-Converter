@@ -1,0 +1,42 @@
+.conversion{
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  column-gap: 10px;
+  &__top{
+
+    h5{
+      margin-bottom: 10px;
+    }
+  }
+  &__items{
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+  }
+  &__item{
+    display: flex;
+    flex: 0 1 100%;
+    column-gap: 10px;
+    input, select{
+      // width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      &::placeholder{
+        color: whitesmoke;
+      }
+      &:disabled{
+        background-color: #e9ecef;
+      }
+    }
+    // select{
+    //   border: 1px solid #ccc;
+
+    // }
+  }
+
+}

@@ -1,0 +1,17 @@
+.converter{
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  max-width: 350px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid gray;
+
+  &__title{
+    font-size: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+}

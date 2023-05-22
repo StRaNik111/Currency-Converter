@@ -1,0 +1,10 @@
+<div class="header">
+  <!-- <h4>The current exchange rate of Euro and Dolar to hryvnia</h4> -->
+  <div class="header__body">
+      <div *ngFor="let currency of currencies" class="header__currency">
+        <p>{{currency.cc}}/UAN:</p>
+        <b >{{currency.rate.toFixed(2)}}</b>
+      </div>
+  </div>
+
+</div>

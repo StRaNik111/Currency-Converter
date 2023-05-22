@@ -1,0 +1,17 @@
+.header{
+}
+.header__body{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  column-gap: 20px;
+}
+
+.header__currency{
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
